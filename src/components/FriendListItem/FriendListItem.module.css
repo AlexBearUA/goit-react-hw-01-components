@@ -1,0 +1,23 @@
+.item {
+  padding: 15px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.status {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.isOffLine {
+  composes: status;
+  background-color: red;
+}
+
+.isOnline {
+  composes: status;
+  background-color: green;
+}
